@@ -25,9 +25,20 @@
     <!-- bootstrap CSS (put before CSS) -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<!-- animate CSS -->
-	<link rel="stylesheet" href="CSS/animate.min.css">
+
+                    
     
+
+	<!-- animate CSS -->
+    <link rel="stylesheet" href="CSS/animate.min.css">
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <link rel="stylesheet" href="CSS/style.css">
     
     <!--responsive CSS-->
@@ -42,7 +53,7 @@
             <ul>
                     <li><a class="active" href="#home">Главная</a></li>
                     <li><a href="#news">Для Детей</a></li>
-                    <li><a href="#contact">Каталог</a></li>
+                    <li><a href="#catalog">Каталог</a></li>
                     <li><a href="#about">Контакты</a></li>
                     <a style="float:right" id="logo" class="navbar-brand" href="#home">
 							<img  src="images/logoSM.png" alt="logo">
@@ -56,14 +67,14 @@
         <div id="home-cover" class="bg-parallax">
             <div class="content-box">
                 <div class="home-title">
-                        <h3 class="animated fadeInDown">Мы рады Вас видеть на странице Рузика!</h3>
+                        <h3 class="wow fadeInDown">Мы рады Вас видеть на странице Рузика!</h3>
                         <!-- <div class="content-title-underline"></div> -->
                 </div>
                 <div id="home-stuff">
-                    <div id="home-img" class="animated swing">
+                    <div id="home-img" class="wow swing">
                         <img src="images/ruz.png" alt="рузик">
                     </div>
-                    <div id="home-text" class="animated zoomIn">
+                    <div id="home-text" class="wow zoomIn">
                         <p>Наша компания была основана в 2001 году. За прошедшее с того момента время мы выпустили более 1 миллиарда пачек кукурузных палочек, готовых завтраков, сладких и соленых снэков, попкорна и продуктов здорового питания. Трудно найти в России человека, кто хотя бы раз не пробовал нашу продукцию. А сейчас её можно купить и в странах СНГ, в Германии и США. Наш портфель брендов включает в себя 6 торговых марок, а ассортимент продукции составляет более 50 наименований. Мы продолжаем развиваться, совершенствовать технологический процесс, искать новые интересные рецепты и продукты. Мы открыты для сотрудничества.</p>
                         <button class="btn-general">Наши вкусняшки</button>
                     </div>
@@ -74,45 +85,233 @@
 
     <section id="brands">
             <div class="brands-title">
-                    <h3>Наши Бренды</h3>
+                    <h3 class="wow fadeInDown delay-1s">Наши Бренды</h3>
                     <div class="content-title-underline"></div>
             </div>
         <div class="bg-parallax brands-box content-box">
             
-            <div class="brand">
+            <div class="brand wow fadeInUp">
                     <div class="img-box">
                     <img src="images/cheshky.png" alt="Чёшки">
                     </div>
                     <p>Под этой торговой маркой наша компания выпускает <strong>соленые снэки</strong>. Среди них - колечки и шарики, кукурузные палочки со вкусом арахиса. В отличие от традиционных чипсов, наша продукция выпускается по экструзионной технологии, что позволяет избежать образования вредных трансжиров, сделать продукцию хрустящей, легкой и приятной на вкус.Ассортимент продуктов под этой торговой маркой активно расширяется.</p>
             </div>
-            <div class="brand">
+            <div class="brand wow fadeInUp">
                     <div class="img-box">
                     <img src="images/logo_01.png" alt="Рузик">
                     </div>
                     <p>Старейшая торговая марка компании, с которой  начался выпуск продукции. Сейчас под этим брендом компания выпускает всеми любимые <strong>кукурузные палочки</strong>, готовые завтраки, сладкий поп-корн,  линейку продуктов для детей, в том числе кукурузные палочки с подарком-сюрпризом. Традиционная технология, жесткий контроль качества делают нашу продукцию вкусной и безопасной для детей и взрослых.</p>
             </div>
-            <div class="brand">
+            <div class="brand wow fadeInUp">
                     <div class="img-box">
-                    <img src="images/maxivita.png" alt="Чёшки">
+                    <img src="images/maxivita.png" alt="MaxiVita">
                     </div>
                     <p>Бренд "MaxiVita" представляет линейку продуктов <strong>здорового питания</strong>. Всем, кто заботится о своем здоровье надо обязательно обратить внимание на эту линейку. Теперь в ассортимент входят не только 5 видов хрустящих хлебцев, но и зерновой пуффинг - продукты из цельных злаков, и хлебцы с добавлением амаранта, расторопши, топинамбура и пищевых волокон. Продукты не содержат ГМО.</p>
             </div>
-            <div class="brand">
+            <div class="brand wow fadeInUp">
                     <div class="img-box">
-                    <img src="images/tsarskie.png" alt="Чёшки">
+                    <img src="images/tsarskie.png" alt="Царские">
                     </div>
                     <p>Под ТМ "Царские" компания выпускает <strong>кукурузные палочки с подарком</strong> для девочек и с подарком для мальчиков. Отличный вкус и интересные сюрпризы. Мы постоянно работаем над расширением ассортимента и улучшением качества подарков.</p>
             </div>
-            <div class="brand">
+            <div class="brand wow fadeInUp">
                     <div class="img-box">
-                    <img src="images/maxi.png" alt="Чёшки">
+                    <img src="images/maxi.png" alt="Макси">
                     </div>
                     <p>ТМ "Макси" - это <strong>бюджетные</strong> кукурузные палочки в семейной упаковке. Полностью сохранив вкус и качество, мы стараемся сделать продукт доступным максимальному числу наших покупателей в разных уголках страны.</p>
             </div>
         </div>
     </section>
+
+    <section id="choose">
+            <div class="choose-title">
+                    <h3 class="wow fadeInDown">Что выберешь ты?</h3>
+            </div>
+            <div class="choose-boxes">
+                <div class="choose-box cheshki wow fadeInLeft delay-1s">
+                    <div class="choose-imgs">
+                            <div class="img-box choose-img">
+                                    <img src="images/cheshki/ch12.jpg" alt="Чёшки">
+                            </div>  
+                            <div class="img-box choose-img">
+                                    <img src="images/cheshki/ch8.jpg" alt="Чёшки">
+                            </div>
+                    </div>
+                    <div class="box-title">
+                        <h2>Чёшки</h2>
+                    </div>
+                    <p>Под этой торговой маркой наша компания выпускает <strong>соленые снэки</strong>. Среди них - колечки и шарики, кукурузные палочки со вкусом арахиса. В отличие от традиционных чипсов, наша продукция выпускается по экструзионной технологии, что позволяет избежать образования вредных трансжиров, сделать продукцию хрустящей, легкой и приятной на вкус.Ассортимент продуктов под этой торговой маркой активно расширяется.</p>
+                </div>
+                <div class="choose-box maxivita wow fadeInRight delay-1s">
+                        <div class="choose-imgs">
+                                <div class="img-box choose-img">
+                                        <img src="images/maxivita_crisps_rye_garlic_big.jpg" alt="МаксиВита">
+                                </div>  
+                                <div class="img-box choose-img">
+                                        <img src="images/maxivita_crisps_corn_small.jpg" alt="МаксиВита">
+                                </div>
+                        </div>
+                        <div class="box-title">
+                                <h2>MaxiVita</h2>
+                            </div>
+                        <p>Бренд "MaxiVita" представляет линейку продуктов <strong>здорового питания</strong>. Всем, кто заботится о своем здоровье надо обязательно обратить внимание на эту линейку. Теперь в ассортимент входят не только 5 видов хрустящих хлебцев, но и зерновой пуффинг - продукты из цельных злаков, и хлебцы с добавлением амаранта, расторопши, топинамбура и пищевых волокон. Продукты не содержат ГМО.</p>
+
+                </div>
+
+            </div>
+    </section>
+
+    <a href="#catalog"></a>
+    <section id="catalog">
+
+        
+        <div class="choose-title catalog-title">
+                <h3 class="wow fadeInDown">Наш каталог</h3>
+        </div>
+
+        <h2 class="wow fadeIn">1. Кукурузные палочки Рузик</h2>
+        <div class="catalog-ruzik wow fadeInUpBig">
+            <div class="ruzik-item">
+                <img data-lazy="images/ruzik/ruz1.jpg"/>
+            </div>
+            <div class="ruzik-item">
+                    <img data-lazy="images/ruzik/ruz2.jpg"/>
+            </div>
+            <div class="ruzik-item">
+                    <img data-lazy="images/ruzik/ruz3.jpg"/>
+             </div>
+            
+            <div class="ruzik-item">
+                    <img data-lazy="images/ruzik/ruz4.jpg"/>
+            </div>
+            <div class="ruzik-item">
+                    <img data-lazy="images/ruzik/ruz5.jpg"/>
+            </div>
+            <div class="ruzik-item">
+                    <img data-lazy="images/ruzik/ruz6.jpg"/>
+            </div>
+            <div class="ruzik-item">
+                    <img data-lazy="images/ruzik/ruz7.jpg"/>
+            </div>
+            <div class="ruzik-item">
+                    <img data-lazy="images/ruzik/ruz8.jpg"/>
+            </div>
+            <div class="ruzik-item">
+                    <img data-lazy="images/ruzik/ruz9.jpg"/>
+            </div>
+            <div class="ruzik-item">
+                    <img data-lazy="images/ruzik/ruz10.jpg"/>
+            </div>
+        </div>
+
+        <h2 class="wow fadeIn">2. Кукурузные палочки Царские и Макси</h2>
+        <div class="catalog-cheshki wow fadeInUpBig">
+                <div class="ruzik-item">
+                        <img data-lazy="images/tsarMax/z1.jpg"/>
+                </div>
+                <div class="ruzik-item wow fadeInUpBig">
+                        <img data-lazy="images/tsarMax/z2.jpg"/>
+                </div>
+                <div class="ruzik-item wow fadeInUpBig">
+                        <img data-lazy="images/tsarMax/m1.jpg"/>
+                </div>
+                <div class="ruzik-item wow fadeInUpBig">
+                        <img data-lazy="images/tsarMax/m2.jpg"/>
+                </div>
+        </div>
+
+        <h2 class="wow fadeIn">3. Чёшки</h2>
+        <div class="catalog-ruzik wow fadeInUpBig">
+                <div class="ruzik-item">
+                        <img data-lazy="images/cheshki/ch1.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch2.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch3.jpg"/>
+                     </div>
+                    
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch4.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch5.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch6.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch7.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch8.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch9.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch10.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch11.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch12.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch13.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch14.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/cheshki/ch15.jpg"/>
+                    </div>
+        </div>
+
+        <h2 class="wow fadeIn">4. Попкорн и воздушные орешки</h2>
+        <div class="catalog-ruzik wow fadeInUpBig">
+                <div class="ruzik-item">
+                        <img data-lazy="images/popcornNuts/p1.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/popcornNuts/p2.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/popcornNuts/p3.jpg"/>
+                     </div>
+                    
+                    <div class="ruzik-item">
+                            <img data-lazy="images/popcornNuts/p4.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/popcornNuts/p1.jpg"/>
+                    </div>
+                    <div class="ruzik-item">
+                            <img data-lazy="images/popcornNuts/p6.jpg"/>
+                    </div>
+        </div>
+
+
+    </section>
+
     </div>
 
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+	<!-- custom JS -->
+    <script src="JS/custom.js"></script>
+    
+
+    
+    
 </body>
 
 </html>
